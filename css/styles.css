@@ -87,3 +87,8 @@ body {
 .button-block {
   margin-bottom: 2.5vh;
 }
+
+#output {
+	margin-left: 25.5vh;
+	margin-bottom: 20vh;
+}

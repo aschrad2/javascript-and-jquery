@@ -4,6 +4,7 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -13,7 +14,7 @@
       </nav>
       <h2 class="heading">Find your ideal vacation spot!</h2>
 
-      <form class="form">
+      <form class="form" id="quiz">
       	<h2>What gender are you?</h2>
       	<div class="switch-field">
       		<input type="radio" id="radio-one" name="switch-one" value="male" checked/>
@@ -54,8 +55,8 @@
           <label for="radio-twelve">Beaches</label>
           <input type="radio" id="radio-thirteen" name="switch-four" value="hiking" />
           <label for="radio-thirteen">Hiking</label>
-          <input type="radio" id="radio-fourteen" name="switch-four" value="clubbing" />
-          <label for="radio-fourteen">Clubbing</label>
+          <input type="radio" id="radio-fourteen" name="switch-four" value="skiing" />
+          <label for="radio-fourteen">Skiing</label>
           <input type="radio" id="radio-fifteen" name="switch-four" value="explore temples" />
           <label for="radio-fifteen">Explore temples</label>
         </div>
@@ -63,15 +64,20 @@
         <h2>How much money do you want to spend</h2>
         <div class="switch-field">
           <input type="radio" id="radio-sixteen" name="switch-five" value="1k-3k" checked/>
-          <label for="radio-sixteen">Male</label>
+          <label for="radio-sixteen">1k-3k</label>
           <input type="radio" id="radio-seventeen" name="switch-five" value="3k-6k" />
-          <label for="radio-seventeen">Female</label>
+          <label for="radio-seventeen">3k-6k</label>
           <input type="radio" id="radio-eighteen" name="switch-five" value="6k-10k" />
-          <label for="radio-eighteen">Other</label>
+          <label for="radio-eighteen">6k-10k</label>
           <input type="radio" id="radio-nineteen" name="switch-five" value="10k-50k" />
-          <label for="radio-nineteen">Prefer not to say</label>
+          <label for="radio-nineteen">10k-50k</label>
         </div>
+        
+        <button type="submit" class="btn btn-success submit-button">Submit</button>
       </form>
+      
+      <div id="output">
+      </div>
     </div>
   </body>
 </html>
